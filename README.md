@@ -1,4 +1,4 @@
-This branch is used to compile RSBE02, BOOST2, NETPLAY2 and NETBOOST2.
+This branch is used to compile RSBE02, BOOS2, NETPLA2 and NETBOOS2.
 
 The primary function of these alternate codesets is to change common2.pac on boot, which permits codeset-specific BrawlEx settings for the same build.
 
