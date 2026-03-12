@@ -1,3 +1,7 @@
+This branch used to compile RSBE02, BOOST2, NETPLAY2 and NETBOOST2.
+
+The primary function of these alternate codesets is to change common2.pac on boot, which permits codeset-specific BrawlEx settings for the same build.
+
 # PowerPC Assembly Functions (Code Menu Building Utility)
 A continuation of Fracture17 and DesiacX's Code Menu Builder for use in both Project+ Ex and Project+ based builds! In particular, this continuation focuses on providing a simple means of configuring different aspects of the menu without needing to manually edit and recompile the builder's source code at all, while additionally offering a slew of brand new features, bug fixes, and under-the-hood improvements and optimizations.
 
