@@ -451,23 +451,23 @@ const std::string GCTRMCommandBase = "\"" + GCTRMExePath + "\" -g -l -q ";
 	#if BUILD_NETPLAY_FILES == true
 	const std::string changelogFileName = "Net-Code_Menu_Changelog.txt";
 	const std::string optionsFilename = "Net-Code_Menu_Options.xml";
-	const std::string mainGCTName = "NETPLAY";
-	const std::string boostGCTName = "NETBOOST";
-	const std::string asmFileName = "Net-CodeMenu.asm";
-	const std::string asmTextFileName = "Net-CodeMenu.txt";
+	const std::string mainGCTName = "NETPLAY2";
+	const std::string boostGCTName = "NETBOOST2";
+	const std::string asmFileName = "Net-CodeMenu2.asm";
+	const std::string asmTextFileName = "Net-CodeMenu2.txt";
 	const std::string cmnuFileName = "dnet.cmnu";
 	const std::vector<std::string> asmBuildLocationDirectories = { "Source/Netplay/" };
-	const std::string cmnuBuildLocationDirectory = "pf/menu3/";
+	const std::string cmnuBuildLocationDirectory = "pf/menu3_2/";
 	#elif BUILD_NETPLAY_FILES == false
-	const std::string changelogFileName = "Code_Menu_Changelog.txt";
-	const std::string optionsFilename = "Code_Menu_Options.xml";
-	const std::string mainGCTName = "RSBE01";
-	const std::string boostGCTName = "BOOST";
-	const std::string asmFileName = "CodeMenu.asm";
-	const std::string asmTextFileName = "CodeMenu.txt";
+	const std::string changelogFileName = "Code_Menu_Changelog2.txt";
+	const std::string optionsFilename = "Code_Menu_Options2.xml";
+	const std::string mainGCTName = "RSBE02";
+	const std::string boostGCTName = "BOOST2";
+	const std::string asmFileName = "CodeMenu2.asm";
+	const std::string asmTextFileName = "CodeMenu2.txt";
 	const std::string cmnuFileName = "data.cmnu";
 	const std::vector<std::string> asmBuildLocationDirectories = { "Source/CodeMenu/", "Source/Project+/" };
-	const std::string cmnuBuildLocationDirectory = "pf/menu3/";
+	const std::string cmnuBuildLocationDirectory = "pf/menu3_2/";
 	#endif
 #else
 // Default Constant Confiuguration Block (used currently by PMEX and LegacyXP)
@@ -478,7 +478,7 @@ const std::string GCTRMCommandBase = "\"" + GCTRMExePath + "\" -g -l -q ";
 //		- asmTextFileName
 const std::string changelogFileName = "Code_Menu_Changelog.txt";
 const std::string optionsFilename = "Code_Menu_Options.xml";
-const std::string mainGCTName = "RSBE01";
+const std::string mainGCTName = "RSBE02";
 const std::string boostGCTName = "";
 const std::string asmFileName = "";
 const std::string asmTextFileName = "";
