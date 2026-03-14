@@ -424,7 +424,7 @@ namespace pscc
 
 
 #if PROJECT_PLUS_EX_BUILD
-const std::string menuConfigXMLFileName = "EX_Config.xml";
+const std::string menuConfigXMLFileName = "EX_Config_2.xml";
 #else
 const std::string menuConfigXMLFileName = "Config.xml";
 #endif
@@ -449,24 +449,24 @@ const std::string GCTRMCommandBase = "\"" + GCTRMExePath + "\" -g -l -q ";
 #if BUILD_TYPE == PROJECT_PLUS
 // Constant Confiuguration Block for Project+ Based Builds
 	#if BUILD_NETPLAY_FILES == true
-	const std::string changelogFileName = "Net-Code_Menu_Changelog.txt";
-	const std::string optionsFilename = "Net-Code_Menu_Options.xml";
+	const std::string changelogFileName = "Net-Code_Menu_Changelog2.txt";
+	const std::string optionsFilename = "Net-Code_Menu_Options2.xml";
 	const std::string mainGCTName = "NETPLA2";
 	const std::string boostGCTName = "NETBOOS2";
 	const std::string asmFileName = "Net-CodeMenu2.asm";
 	const std::string asmTextFileName = "Net-CodeMenu2.txt";
 	const std::string cmnuFileName = "dnet.cmnu";
-	const std::vector<std::string> asmBuildLocationDirectories = { "Source/Netplay/" };
+	const std::vector<std::string> asmBuildLocationDirectories = { "Source_RSBE02/Netplay/" };
 	const std::string cmnuBuildLocationDirectory = "pf/menu3_2/";
 	#elif BUILD_NETPLAY_FILES == false
 	const std::string changelogFileName = "Code_Menu_Changelog2.txt";
 	const std::string optionsFilename = "Code_Menu_Options2.xml";
 	const std::string mainGCTName = "RSBE02";
 	const std::string boostGCTName = "BOOS2";
-	const std::string asmFileName = "CodeMenu2.asm";
-	const std::string asmTextFileName = "CodeMenu2.txt";
+	const std::string asmFileName = "CodeMenu.asm";
+	const std::string asmTextFileName = "CodeMenu.txt";
 	const std::string cmnuFileName = "data.cmnu";
-	const std::vector<std::string> asmBuildLocationDirectories = { "Source/CodeMenu/", "Source/Project+/" };
+	const std::vector<std::string> asmBuildLocationDirectories = { "Source_RSBE02/CodeMenu/", "Source_RSBE02/Project+/" };
 	const std::string cmnuBuildLocationDirectory = "pf/menu3_2/";
 	#endif
 #else
@@ -476,8 +476,8 @@ const std::string GCTRMCommandBase = "\"" + GCTRMExePath + "\" -g -l -q ";
 //		- boostGCTName
 //		- asmFileName
 //		- asmTextFileName
-const std::string changelogFileName = "Code_Menu_Changelog.txt";
-const std::string optionsFilename = "Code_Menu_Options.xml";
+const std::string changelogFileName = "Code_Menu_Changelog2.txt";
+const std::string optionsFilename = "Code_Menu_Options2.xml";
 const std::string mainGCTName = "RSBE02";
 const std::string boostGCTName = "";
 const std::string asmFileName = "";
@@ -497,7 +497,7 @@ const std::string cmnuOutputFilePath = outputFolder + cmnuFileName;
 const std::string cmnuOptionsOutputFilePath = outputFolder + optionsFilename;
 const std::string cmnuBuildLocationFilePath = buildFolder + cmnuBuildLocationDirectory + cmnuFileName;
 const std::string addonsOutputFolderPath = outputFolder + addonOutputFolderName;
-const std::string addonsBuildLocationFolderPath = buildFolder + "Source/" + addonOutputFolderName;
+const std::string addonsBuildLocationFolderPath = buildFolder + "Source_RSBE02/" + addonOutputFolderName;
 std::string getCMNUAbsolutePath()
 {
 	return MAIN_FOLDER + "/" + cmnuBuildLocationDirectory + cmnuFileName;
